@@ -1,32 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import star from '../assets/home/star.svg'
 
 const Header = () => {
-    const [active, setActive] = useState('item-active')
-    const handleItemClick = () => {
-
-    }
     return (
-        // <div className='container' >
-        //     <ul className="nav justify-content-center">
-        //         <Link className="navbar-brand" to="/">
-        //             <img src={star} alt="star" className="img-fluid" />
-        //         </Link>
-        //         <li className="nav-item">
-        //             <a className="nav-link active" aria-current="page" href="/">Active</a>
-        //         </li>
-        //         <li className="nav-item">
-        //             <a className="nav-link" href="/">Link</a>
-        //         </li>
-        //         <li className="nav-item">
-        //             <a className="nav-link" href="/">Link</a>
-        //         </li>
-        //         <li className="nav-item">
-        //             <a className="nav-link disabled" aria-disabled="true" href='/'>Disabled</a>
-        //         </li>
-        //     </ul>
-        // </div>
         <nav className="navbar navbar-expand-lg  fixed-top navbaractive">
             <div className="my-container">
                 <Link className="navbar-brand" to="/">
