@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import data from '../data.json'
 import img1 from '../assets/technology/image-launch-vehicle-portrait.jpg'
 import img2 from '../assets/technology/image-spaceport-portrait.jpg'
