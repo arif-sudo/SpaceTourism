@@ -20,7 +20,6 @@ const Crew = () => {
 
     React.useEffect(() => {
         const newImageUrl = require(`../assets/crew/background-crew-desktop.jpg`);
-        console.log(images)
         if (root) {
             root.setAttribute('style', `background-image: url(${newImageUrl})`);
         }

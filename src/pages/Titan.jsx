@@ -17,7 +17,7 @@ const Titan = () => {
         <div className='destination'>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center ">
+                    <div className="col-sm-12 col-md-6">
                         <div className='destination-header' >
                             <span>01</span>
                             <h3>Pick your destination</h3>

@@ -7,6 +7,7 @@ import Mars from './pages/Mars'
 import Europa from './pages/Europa'
 import Titan from './pages/Titan'
 import Crew from './pages/Crew'
+import Technology from './pages/Technology'
 
 const App = () => {
   return (
@@ -18,8 +19,8 @@ const App = () => {
         <Route path='/destination/mars' element={<Mars />} />
         <Route path='/destination/europa' element={<Europa />} />
         <Route path='/destination/titan' element={<Titan />} />
-
         <Route path='/crew' element={<Crew />} />
+        <Route path='/technology' element={<Technology />} />
       </Routes>
     </BrowserRouter>
   )

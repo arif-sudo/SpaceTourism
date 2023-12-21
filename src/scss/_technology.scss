@@ -1,0 +1,29 @@
+.technology {
+    margin-top: 180px;
+    .technology-header {
+        display: inline-flex;
+        padding-right: 6px;
+        align-items: flex-start;
+        gap: 28px;
+        h3 {
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        span {
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 4.725px;
+        }
+    }
+}
