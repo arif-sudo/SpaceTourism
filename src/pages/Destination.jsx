@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import monn from '../assets/destination/image-moon.webp'
+import moon from '../assets/destination/image-moon.png'
 
 const Destination = () => {
   const root = document.getElementById('root');
@@ -24,7 +24,7 @@ const Destination = () => {
               <span>01</span>
               <h3>Pick your destination</h3>
             </div>
-            <img src={monn} alt="moon" />
+            <img src={moon} alt="moon" />
           </div>
           <div className="col-sm-12 col-md-5 d-flex flex-column justify-content-start ">
             <nav className="navbar navbar-expand-lg  destination-nav ">

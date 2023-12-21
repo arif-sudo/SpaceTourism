@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Destination from './pages/Destination'
 import Mars from './pages/Mars'
 import Europa from './pages/Europa'
+import Titan from './pages/Titan'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/destination/*' element={<Destination />} />
         <Route path='/destination/mars' element={<Mars />} />
         <Route path='/destination/europa' element={<Europa />} />
+        <Route path='/destination/titan' element={<Titan />} />
       </Routes>
     </BrowserRouter>
   )

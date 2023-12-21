@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import europa from '../assets/destination/image-europa.webp'
+import europa from '../assets/destination/image-europa.png'
 
 const Europa = () => {
     const root = document.getElementById('root');
