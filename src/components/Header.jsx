@@ -10,10 +10,10 @@ const Header = () => {
                     <img src={star} alt="" className="img-fluid" />
                 </Link>
                 <div className="header-line mx-auto"></div>
-                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>
-                    A
+                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon" />
                 </button> */}
-                <div className="collapse navbar-collapse header-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse header-collapse">
                     <ul className="navbar-nav ms-auto nav-item-parent">
                         <Link className='nav-item' to="/"
                             onMouseEnter={(e) => e.target.classList.add("item-active")}
