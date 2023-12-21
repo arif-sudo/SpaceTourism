@@ -14,7 +14,6 @@
             line-height: normal;
             letter-spacing: 4.725px;
             text-transform: uppercase;
-            margin-bottom: 50px;
         }
         span {
             color: #fff;
@@ -25,5 +24,96 @@
             line-height: normal;
             letter-spacing: 4.725px;
         }
+    }
+    .tech-col {
+        margin-top: 50px;
+        height: 300px;
+        display: flex;
+        .tech-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+            .tbtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border: 1px solid white;
+                border-radius: 100%;
+                margin-top: 30px;
+                h1 {
+                    margin: 0;
+                    margin-left: 1px;
+                    color: white;
+                    text-align: center;
+                    font-family: Bellefair;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                }
+            }
+            .tech-active-btn {
+                background-color: #fff;
+                h1 {
+                    color: #0b0d17;
+                }
+            }
+        }
+        .tech-headline {
+            span {
+                color: #d0d6f9;
+                font-family: Barlow Condensed;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.7px;
+            }
+            h1 {
+                color: #fff;
+                font-family: Bellefair;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            p {
+                width: 500px;
+                color: #d0d6f9;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 177.778% */
+            }
+        }
+        
+    }
+    .tech-slide {
+        display: none;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+    .tech-slide.active {
+        display: block;
+        opacity: 1;
+    }
+
+    /* Fade Animation */
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Apply Fade Animation to Slides */
+    .tech-slide.active {
+        animation: fade 1.5s ease-in-out;
     }
 }
