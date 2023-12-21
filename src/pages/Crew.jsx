@@ -25,6 +25,7 @@ const Crew = () => {
             root.setAttribute('style', `background-image: url(${newImageUrl})`);
         }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [root]);
 
     React.useEffect(() => {
@@ -33,6 +34,7 @@ const Crew = () => {
         }, 5000); // Change slide every 2 seconds
 
         return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); // Run this effect only once on mount
 
     return (
