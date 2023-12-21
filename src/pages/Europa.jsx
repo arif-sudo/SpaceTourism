@@ -1,20 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import mars from '../assets/destination/image-mars.png'
+import europa from '../assets/destination/image-europa.webp'
 
-const Mars = () => {
-  const root = document.getElementById('root');
+const Europa = () => {
+    const root = document.getElementById('root');
 
-  React.useEffect(() => {
-    const newImageUrl = require(`../assets/destination/background-destination-desktop.jpg`);
+    React.useEffect(() => {
+        const newImageUrl = require(`../assets/destination/background-destination-desktop.jpg`);
 
-    if (root) {
-      root.setAttribute('style', `background-image: url(${newImageUrl})`);
-    }
+        if (root) {
+            root.setAttribute('style', `background-image: url(${newImageUrl})`);
+        }
 
-  }, [root]);
-  return (
-    <div className='destination'>
+    }, [root]);
+    return (
+        <div className='destination'>
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center ">
@@ -22,7 +22,7 @@ const Mars = () => {
               <span>01</span>
               <h3>Pick your destination</h3>
             </div>
-            <img src={mars} alt="mars" />
+            <img src={europa} alt="europa" />
           </div>
           <div className="col-sm-12 col-md-5 d-flex flex-column justify-content-start ">
             <nav className="navbar navbar-expand-lg  destination-nav ">
@@ -52,25 +52,24 @@ const Mars = () => {
                   onMouseLeave={(e) => e.target.classList.remove("dest-item-active")}>TITAN</Link>
               </ul>
             </nav>
-            <h1>MARS</h1>
-            <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+            <h1>EUROPA</h1>
+            <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
             <div className="dest-line"></div>
             <div className='row dest-bottom '>
               <div className="col-6">
                 <p>AVG. DISTANCE</p>
-                <h4>225 MIL. km</h4>
+                <h4>628 MIL. km</h4>
               </div>
               <div className="col-6">
                 <p>Est. travel time</p>
-                <h4>9 months</h4>
+                <h4>3 years</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div >
-
-  )
+    )
 }
 
-export default Mars
+export default Europa
