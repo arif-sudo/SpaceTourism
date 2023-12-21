@@ -1,0 +1,130 @@
+.crew {
+    margin-top: 180px;
+    .crew-header {
+        display: inline-flex;
+        padding-right: 6px;
+        align-items: flex-start;
+        gap: 28px;
+        h3 {
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.725px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        span {
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 4.725px;
+        }
+    }
+    // slide show
+    /* Slideshow Container */
+    .slideshow-container {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        position: relative;
+        /* Slide Content */
+        .slide-content-right {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            // overflow: hidden;
+            h3 {
+                color: #fff;
+                font-family: Bellefair;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                opacity: 0.5042;
+            }
+            h1 {
+                color: #fff;
+                font-family: Bellefair;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            p {
+                width: 500px;
+                color: #d0d6f9;
+                font-family: Barlow;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+
+    /* Control Buttons */
+    .controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(-50%);
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .prev,
+    .next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 50px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    /* Individual Slide */
+    .slide {
+        display: none;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+
+    /* Active Slide */
+    .slide.active {
+        display: block;
+        opacity: 1;
+    }
+
+    /* Image Styles */
+    img {
+        margin-bottom: 500px;
+        width: 600px;
+        height: 600px;
+    }
+
+    /* Fade Animation */
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Apply Fade Animation to Slides */
+    .slide.active {
+        animation: fade 1.5s ease-in-out;
+    }
+}
