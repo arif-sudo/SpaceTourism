@@ -1,0 +1,37 @@
+.my-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 20px;
+    .header-line {
+        width: 400px;
+        height: 1px;
+        border: 0.1px solid #979797;
+    }
+    .header-collapse {
+        max-width: 60%;
+        transition: max-width 0.2s;
+        .nav-item-parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100px;
+            backdrop-filter: blur(50px);
+            background-color: rgba(255, 255, 255, 0.01);
+            .nav-item {
+                color: #ffffff !important;
+                text-decoration: none;
+                font-family: "Montserrat";
+                line-height: 11px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                padding: 43px 0;
+            }
+            .item-active {
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+}
